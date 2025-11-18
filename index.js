@@ -1,9 +1,7 @@
-function calculateTotal(subtotal, shipping = 2.50) {
+const calculateTotal = (subtotal, shipping = 2.50) => {
   return subtotal + shipping;
-};
+}
 
-function printTopThreeHeadlines(...headlines) {
+const printTopThreeHeadlines = (...headlines) => {
   return headlines.slice(0, 3).join('\n');
-};
-
-export { calculateTotal, printTopThreeHeadlines };
+}
